@@ -1,9 +1,10 @@
 package com.leexdao.dp.proxy;
 
+import net.sf.cglib.proxy.MethodInterceptor;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.util.Arrays;
 
 /**
  * @description:
@@ -20,9 +21,9 @@ public class MyInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("动态代理： 打开冰箱...");
+        System.out.println("jdk动态代理： 打开冰箱...");
         Object invoke = method.invoke(myOperation, null);
-        System.out.println("动态代理： 关闭冰箱...");
+        System.out.println("jdk动态代理： 关闭冰箱...");
         return invoke;
     }
 

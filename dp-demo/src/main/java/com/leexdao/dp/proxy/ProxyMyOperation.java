@@ -1,7 +1,5 @@
 package com.leexdao.dp.proxy;
 
-import java.lang.reflect.InvocationHandler;
-
 /**
  * @description: 代理类
  * @author: leexdao

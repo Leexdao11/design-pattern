@@ -1,7 +1,5 @@
 package com.leexdao.dp.builder;
 
-import java.awt.*;
-
 /**
  * @description: 建造者模式
  * 适用场景：
